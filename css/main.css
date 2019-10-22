@@ -13,6 +13,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     position: relative;
+    scroll-behavior: smooth;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -43,7 +44,7 @@ a {
     text-decoration: none;
 }
 
-.smooth_scroll {
+.anchor-links {
     z-index: 100;
 }
 
@@ -57,20 +58,24 @@ h3 {
 
 /************** CONTAINERS *************/
 .container {
+    position: relative;
     -moz-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     overflow-x: hidden;
+    z-index: -4;
 }
 
 .inner_container {
+    position: relative;
     width: auto;
     margin: 0 auto;
     max-width: 1322px;
     padding-top: 70px;
     padding-bottom: 80px;
     overflow: visible;
+    z-index: 10;
 }
 
 /******* HEADER *******/
@@ -171,7 +176,8 @@ h3 {
 	background: -webkit-linear-gradient(90deg, #27c1f0, #328bd9); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(90deg, #27c1f0, #328bd9); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(90deg, #27c1f0, #328bd9); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(90deg, #27c1f0, #328bd9); /* Standard syntax */
+    background: linear-gradient(90deg, #27c1f0, #328bd9); /* Standard syntax */
+    overflow-y: hidden;
 }
 
 #container1 .title {
@@ -213,14 +219,26 @@ h3 {
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 20px;
-	-webkit-box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    transition: 0.2s ease;
+}
+
+#pawankolhe_img:hover {
+    transform: translateY(-4px);
+    -webkit-box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.3);
-	border-radius: 20px;
+    box-shadow: 0 15px 38px 2px rgba(0, 0, 0, 0.3);
 }
 
 #container1 .article p strong {
     font-size: 1.2rem;
+}
+
+.buttonAboutMeBox {
+    margin-top: 10px;
 }
 
 .buttonAboutMe {
@@ -247,6 +265,45 @@ h3 {
 #aboutMeEmail {
 	color: #FFFFFF;
 	font-weight: bold;
+}
+
+/* Parallax Effect */
+#parallax-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 8px;
+    perspective-origin: 15%;
+    scroll-behavior: smooth;
+}
+
+.floating-icons {
+    z-index: -1;
+}
+
+#floatLayer1 {
+    position: absolute;
+    top: 170px;
+    left: calc(-300px - 10%);
+    opacity: 0.2;
+    transform: translateZ(-4px);
+    transform-style: preserve-3d;
+    transition: 0.8s ease;
+}
+
+#floatLayer1:hover {
+    opacity: 0.9;
+}
+
+#floatLayer2 {
+    position: absolute;
+    top: 200px;
+    right: -410px;
+    opacity: 0.1;
+    transform: translateZ(-1px);
+    transform-style: preserve-3d;
+    transition: 0.8s ease;
 }
 
 /******* WANT SOMETHING DONE? *******/
@@ -498,10 +555,18 @@ h3 {
     margin-left: 30px;
     margin-right: 30px;
     vertical-align: middle;
+    -webkit-box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+#container2 .boxes:hover {
+    transform: translateY(-4px);
     -webkit-box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.3);
-	border-radius: 10px;
+    box-shadow: 0 15px 38px 2px rgba(0, 0, 0, 0.3);
 }
 
 #container2 .boxes .boxes_img {
@@ -695,23 +760,6 @@ h3 {
 
 .article p {
     color: #474747;
-}
-
-/********************* ANIMATION ************************/
-.rotate {
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -o-transform: scale(0.9);
-    transform: scale(0.9);
-    transition: .2s;
-}
-
-.rotate2 {
-    transition: .2s;
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
 }
 
 /********************* TOOLTIP ************************/

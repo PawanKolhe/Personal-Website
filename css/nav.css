@@ -81,7 +81,7 @@
     height: auto;
     text-align: center;
     text-decoration: none;
-    padding: 15px;
+    padding: 16px;
     padding-right: 6%;
     z-index: 400;
     color: #C3C3C3;
@@ -185,6 +185,22 @@
 
 #navigation_mobile_real i {
     z-index: 300;
+}
+
+#hamburger {
+    transition: .2s;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/********* ANIMATION *********/
+.rotate {
+    -webkit-transform: scale(1) !important;
+    -moz-transform: scale(1) !important;
+    -o-transform: scale(1) !important;
+    transform: scale(1) !important;
 }
 
 /********* MEDIA QUERIES *********/
