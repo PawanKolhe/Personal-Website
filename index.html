@@ -568,6 +568,14 @@
                 </div>
                 
             </article>
+
+            <!-- Parallax Images -->
+            <div class="floating-icons" id="floatLayer3">
+                <img src="img/icons/rocket.svg" style="width: 1050px;" />
+            </div>
+            <div class="floating-icons" id="floatLayer4">
+                <img src="img/icons/stars.svg" style="width: 400px;" />
+            </div>
        </div>
     </div>
     
@@ -585,6 +593,14 @@
 				<div class="box"><a href="img/certifications/MTA-large.png"><img alt="Microsoft Technology Associate" src="img/certifications/MTA-small.jpg"></a></div>
                 <div class="box"><a href="img/certifications/digital-unlocked-large.png"><img alt="Digital Unlocked" src="img/certifications/digital-unlocked-small.jpg"></a></div>
             </div>
+
+            <!-- Parallax Images -->
+            <div class="floating-icons" id="floatLayer5">
+                <img src="img/icons/medal.svg" style="width: 650px;" />
+            </div>
+            <div class="floating-icons" id="floatLayer6">
+                <img src="img/icons/certificate.svg" style="width: 250px;" />
+            </div>
         </div>
     </div>
     
@@ -593,25 +609,60 @@
     	<div class="inner_container">
         
             <h2 class="title">Contact Me</h2><hr>
-            <div id="map"></div>
-            <div>
-                <article class="article_container4 article">
-                    <section class="subtitle"><i class="fas fa-map-marker-alt"></i>&nbsp;<h3><b>Location:</b></h3><hr></section>
-                    <section><a class="color_3b" href="https://www.google.co.in/maps/place/Navi+Mumbai,+Maharashtra/@19.0162992,72.8930769,11z/data=!3m1!4b1!4m5!3m4!1s0x3be7b9f0b81f13ad:0x3c12f7681185f869!8m2!3d19.0330488!4d73.0296625?hl=en" target="_blank"><span>Mumbai,</span><br>India</a></section>
-                </article>
+            
+            <div class="grid-container">
+                <div class="grid-child item-big">
+                    <div class="grid-item-title">Message Me</div>
+                    <div class="grid-item-content">
+                        <form id="formRegister" name="formRegister" class="form-content" method="post" action="https://formspree.io/mwkevddd">
+                            <!--<input type="hidden" name="_to" value="contact@pawankolhe.com">
+                            <input type="text" name="_honeypot" value="" style="display:none">-->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Your Name</label>
+                                    <input type="text" id="fm-name-1" name="_name" pattern="[a-zA-Z\s]+" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Your Email</label>
+                                    <input type="email" id="fm-email" name="_replyto" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Message</label>
+                                    <textarea name="message" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <button id="fm-submit" class="form-button" type="submit">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="grid-right-item grid-child item-email">
+                    <div class="grid-item-title">Email</div>
+                    <div class="grid-item-content">
+                        contact@pawankolhe.com
+                        <img class="grid-item-icon" src="img/icons/email.svg">
+                    </div>
+                </div>
+                <div class="grid-child grid-right-item item-phone">
+                    <div class="grid-item-title">Phone</div>
+                    <div class="grid-item-content">
+                        +91-8758608290
+                        <img class="grid-item-icon" src="img/icons/phone.svg">
+                    </div>
+                </div>
+                <div class="grid-child grid-right-item item-city">
+                    <div class="grid-item-title">Let's Have Coffee</div>
+                    <div class="grid-item-content">
+                        Navi Mumbai, India
+                        <img class="grid-item-icon" src="img/icons/location.svg">
+                    </div>
+                </div>
             </div>
-            <div>
-                <article class="article_container4 article">
-                    <section class="subtitle"><i class="fas fa-envelope-open"></i>&nbsp;<h3><b>E-mail:</b></h3><hr></section>
-                    <section class="email"><a class="color_3b" href="mailto:contact@pawankolhe.com">contact@pawankolhe.com</a></section>
-                </article>
-            </div>
-            <div>
-                <article class="article_container4 article">
-                    <section class="subtitle"><i class="fas fa-phone"></i>&nbsp;<h3><b>Call Me:</b></h3><hr></section>
-                    <section><a class="color_3b" href="tel:+918758608290"><span>+91 (875) 860-8290</span></a></section>
-                </article>
-            </div>            
          </div>
     </div>
     
@@ -657,23 +708,12 @@
     <script async src="js/canvas.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/common.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf5Lr8UAAAAAK2SKzSmGbvPUAEi-EGDk240bE1X"></script>
     <script>
-        var map;
-        function initMap() {
-            var myLatLng = {lat: 19.160712, lng: 72.995205};
-            
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 5,
-                center: myLatLng
-            });
-            
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'Navi Mumbai'
-            });
-        }
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6Lf5Lr8UAAAAAK2SKzSmGbvPUAEi-EGDk240bE1X', {action: 'homepage'}).then(function(token) {
+        });
+    });
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiFLr6oJrUI62VZjBq4t-aHMnRuFCZPR8&callback=initMap" type="text/javascript"></script>
 </body>
 </html>

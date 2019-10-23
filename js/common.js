@@ -29,6 +29,7 @@ $("#hamburger_a").click(function(){
     $("#hamburger").toggleClass("rotate");
     $("#menu").toggle("fast", "swing");
     $("#navigation_mobile_real").toggleClass("white");
+    return true;
 });
 
 // Typewrite effect on Welcome section
