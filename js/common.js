@@ -1,36 +1,5 @@
-// Scrolling changes navigation bar
-$("#parallax-container").scroll(function() {
-    let a = $("#container1").offset().top;
-    let b = $("#container5").offset().top;
-
-    if ($("#parallax-container").scrollTop() > a - 75) {
-        $('#navigation_mobile_real').addClass('white');
-    } else {					
-        $('#navigation_mobile_real').removeClass('white');
-    }
-    
-    if ($("#parallax-container").scrollTop() > b) {
-        $('#navigation_mobile_real').addClass('disappear');
-    } else {					
-        $('#navigation_mobile_real').removeClass('disappear');
-    }
-    
-    if ($("#parallax-container").scrollTop() > b - 100) {
-        $('#go_to_top_button').css('visibility', 'visible');
-        $('#go_to_top_button').css('opacity', '1');
-    } else {					
-        $('#go_to_top_button').css('visibility', 'hidden');
-        $('#go_to_top_button').css('opacity', '0');
-    }
-});
-
-// Toggles visibility of mobile menu and hamburger rotate animation
-$("#hamburger_a").click(function(){
-    $("#hamburger").toggleClass("rotate");
-    $("#menu").toggle("fast", "swing");
-    $("#navigation_mobile_real").toggleClass("white");
-    return true;
-});
+// Scroll to the element with specified id
+const scrollToElement = (id) => document.getElementById(id).scrollIntoView();
 
 // Typewrite effect on Welcome section
 (function(window){
@@ -91,3 +60,37 @@ $("#hamburger_a").click(function(){
         }
     };
 })(window);
+
+// Scrolling changes navigation bar
+$("#parallax-container").scroll(function() {
+    let a = $("#container1").offset().top;
+    let b = $("#container5").offset().top;
+
+    if ($("#parallax-container").scrollTop() > a - 75) {
+        $('#navigation_mobile_real').addClass('white');
+    } else {					
+        $('#navigation_mobile_real').removeClass('white');
+    }
+    
+    if ($("#parallax-container").scrollTop() > b) {
+        $('#navigation_mobile_real').addClass('disappear');
+    } else {					
+        $('#navigation_mobile_real').removeClass('disappear');
+    }
+    
+    if ($("#parallax-container").scrollTop() > b - 100) {
+        $('#go_to_top_button').css('visibility', 'visible');
+        $('#go_to_top_button').css('opacity', '1');
+    } else {					
+        $('#go_to_top_button').css('visibility', 'hidden');
+        $('#go_to_top_button').css('opacity', '0');
+    }
+});
+
+// Toggles visibility of mobile menu and hamburger rotate animation
+$("#hamburger_a").click(function(){
+    $("#hamburger").toggleClass("rotate");
+    $("#menu").toggle("fast", "swing");
+    $("#navigation_mobile_real").toggleClass("white");
+    return true;
+});

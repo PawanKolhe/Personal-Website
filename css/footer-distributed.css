@@ -1,6 +1,10 @@
 /****************************************** FOOTER-DISTRIBUTED.CSS *****************************************/
 .footer-distributed {
-    background-color: #292c2f;
+    background: #292c2f; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(90deg, #222427, #292c2f, #222427); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(90deg, #222427, #292c2f, #222427); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(90deg, #222427, #292c2f, #222427); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #222427, #292c2f, #222427); /* Standard syntax */
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -10,7 +14,7 @@
 }
 
 .footer-distributed .footer-left p {
-    color: #8f9296;
+    color: rgb(108, 111, 114);
     font-size: 14px;
     margin: 0;
 	font-family: Montserrat, "Open Sans", san-serif;

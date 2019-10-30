@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pawan Kolhe</title>
@@ -40,7 +39,6 @@
         
         gtag('config', 'UA-70143073-1');
     </script>
-    
 </head>
 
 
@@ -52,12 +50,12 @@
         </nav>
         <div id="menu">
             <nav>
-                <a class="anchor-links" href="#container1">About Me</a>
-                <a class="anchor-links" href="#container5">Skills</a>
-                <a class="anchor-links" href="#container6">Personal Info</a>
-                <a class="anchor-links" href="#container2">Projects</a>
-                <a class="anchor-links" href="#container3">Certifications</a>
-                <a class="anchor-links" href="#container4">Contact Me</a>
+                <a class="anchor-links" onclick="scrollToElement('container1')">About Me</a>
+                <a class="anchor-links" onclick="scrollToElement('container5')">Skills</a>
+                <a class="anchor-links" onclick="scrollToElement('container6')">Personal Info</a>
+                <a class="anchor-links" onclick="scrollToElement('container2')">Projects</a>
+                <a class="anchor-links" onclick="scrollToElement('container3')">Certifications</a>
+                <a class="anchor-links" onclick="scrollToElement('container4')">Contact Me</a>
             </nav>
         </div>
     </div>
@@ -73,11 +71,11 @@
     
     <!-- Navigation Bar (for desktop browsers) -->
     <nav id="navigation">
-        <a class="anchor-links" href="#container1">About&nbsp;Me</a><!--
-        --><a class="anchor-links" href="#container2">Projects</a><!--
-        --><a class="anchor-links" href="#header" id="pawankolhe_heading">P</a><!--
-        --><a class="anchor-links" href="#container3">Certifications</a><!--
-        --><a class="anchor-links" href="#container4">Contact</a>
+        <a class="anchor-links" onclick="scrollToElement('container1')">About&nbsp;Me</a><!--
+        --><a class="anchor-links" onclick="scrollToElement('container2')">Projects</a><!--
+        --><a class="anchor-links" id="pawankolhe_heading">P</a><!--
+        --><a class="anchor-links" onclick="scrollToElement('container3')">Certifications</a><!--
+        --><a class="anchor-links" onclick="scrollToElement('container4')">Contact</a>
     </nav>
     
     <!--==== HEADER ====-->
@@ -87,7 +85,7 @@
         <div id="header_quote">
             <p>I'm <a href="javascript:void(0)" class="typewrite" data-period="1000" data-type='[ "a Web Developer.", "a Cloud Practitioner.", "Tech Savvy.", "a Coder." ]'><span class="wrap">a Web Developer.</span></a><span class="cursor">&nbsp;</span></p>
         </div>
-		<a href="#container1">
+		<a onclick="scrollToElement('container1')">
 			<div class="scroll-downs">
 			  <div class="mousey">
 				<div class="scroller"></div>
@@ -102,11 +100,11 @@
             <article class="article clearfix">
                 <h2 class="title">About Me</h2><hr>
             	<img id="pawankolhe_img" alt="Pawan Kolhe" src="img/pawankolhe.jpg">
-                <p>Hey! I'm <strong><span><span>Pawan</span>&nbsp;<span>Kolhe</span></span></strong>. I'm a Web Developer with a keen eye for good detail and design.</p><br>
-				<p>I love to built websites for business and individuals. I've been designing website for more than 4 years and learning new skills along the way which have helped me become a better developer. I'm able to leverage the power of Cloud to deploy software and IT infrastructure at scale. Have worked with React, UI/UX Design, CSS, HTML5, JavaScript, PHP, MySQL to create aesthetically pleasing, responsive and functional websites. Have a keen eye for details, and understanding of great user experience design along with strong knowledge of search engine optimization and digital marketing.</p>
+                <p>Hey there! I'm <strong><span><span>Pawan</span>&nbsp;<span>Kolhe</span></span></strong>, a Web Developer.</p><br>
+				<p>I enjoy builting websites and learning the ecosystem around them. I've been designing website for several years now and learning new skills along the way helping me to become a better developer. I can use the power of Cloud Computing (particularly AWS) to deploy and scale software and IT infrastructure at scale. Have worked with React, JavaScript, CSS, HTML5, PHP, MySQL, UI/UX design and many other tools to create aesthetically pleasing, responsive and functional websites. I pay close attention to details, and have a great understanding of what it takes to build user centric user experiences. Additionally I have a strong knowledge of search engine optimization and digital marketing.</p>
 				<br>
                 <p>I set clear goals to learn new technologies in the ever-changing IT field and thrive to build upon my existing knowledge with experience.</p><br>
-                <p>Get in touch at <a id="aboutMeEmail" href="mailto:contact@pawankolhe.com">contact@pawankolhe.com</a></p>
+                <p>Get in touch at <a class="underline" id="aboutMeEmail" href="mailto:contact@pawankolhe.com">contact@pawankolhe.com</a></p>
                 <br>
                 
                 <!-- Other Profile Links -->
@@ -128,7 +126,7 @@
 
             <!-- Parallax Images -->
             <div class="floating-icons" id="floatLayer1">
-                <img src="img/icons/html-coding.svg" style="width: 350px;" />
+                <img src="img/icons/html-coding.svg" style="width: 400px;" />
             </div>
             <div class="floating-icons" id="floatLayer2">
                 <img src="img/icons/binary-code.svg" style="width: 300px;" />
@@ -438,6 +436,10 @@
                 </div>
             </article>
             
+            <!-- Parallax Images -->
+            <div class="floating-icons" id="floatLayer7">
+                <img src="img/icons/skill.svg" style="width: 850px;" />
+            </div>
         </div>
     </div>
     
@@ -574,7 +576,7 @@
                 <img src="img/icons/rocket.svg" style="width: 1050px;" />
             </div>
             <div class="floating-icons" id="floatLayer4">
-                <img src="img/icons/stars.svg" style="width: 400px;" />
+                <img src="img/icons/stars.svg" style="width: 300px;" />
             </div>
        </div>
     </div>
@@ -599,7 +601,7 @@
                 <img src="img/icons/medal.svg" style="width: 650px;" />
             </div>
             <div class="floating-icons" id="floatLayer6">
-                <img src="img/icons/certificate.svg" style="width: 250px;" />
+                <img src="img/icons/shining.svg" style="width: 250px;" />
             </div>
         </div>
     </div>
@@ -615,22 +617,20 @@
                     <div class="grid-item-title">Message Me</div>
                     <div class="grid-item-content">
                         <form id="formRegister" name="formRegister" class="form-content" method="post" action="https://formspree.io/mwkevddd">
-                            <!--<input type="hidden" name="_to" value="contact@pawankolhe.com">
-                            <input type="text" name="_honeypot" value="" style="display:none">-->
                             <div class="form-row">
                                 <div class="form-group">
                                     <label>Your Name</label>
-                                    <input type="text" id="fm-name-1" name="_name" pattern="[a-zA-Z\s]+" required>
+                                    <input type="text" id="fm-name-1" name="_name" pattern="[a-zA-Z\s]+">
                                 </div>
                                 <div class="form-group">
-                                    <label>Your Email</label>
+                                    <label>Your Email*</label>
                                     <input type="email" id="fm-email" name="_replyto" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label>Message</label>
-                                    <textarea name="message" rows="3"></textarea>
+                                    <label>Message*</label>
+                                    <textarea name="message" rows="3" required></textarea>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -644,21 +644,21 @@
                 <div class="grid-right-item grid-child item-email">
                     <div class="grid-item-title">Email</div>
                     <div class="grid-item-content">
-                        contact@pawankolhe.com
+                        <a class="grid-item-content-text underline" href="mailto:contact@pawankolhe.com">contact@pawankolhe.com</a>
                         <img class="grid-item-icon" src="img/icons/email.svg">
                     </div>
                 </div>
                 <div class="grid-child grid-right-item item-phone">
                     <div class="grid-item-title">Phone</div>
                     <div class="grid-item-content">
-                        +91-8758608290
+                        <a class="grid-item-content-text underline" href="tel:+918758608290">+91-8758608290</a>
                         <img class="grid-item-icon" src="img/icons/phone.svg">
                     </div>
                 </div>
                 <div class="grid-child grid-right-item item-city">
                     <div class="grid-item-title">Let's Have Coffee</div>
                     <div class="grid-item-content">
-                        Navi Mumbai, India
+                        <span class="grid-item-content-text">Navi Mumbai, India</span>
                         <img class="grid-item-icon" src="img/icons/location.svg">
                     </div>
                 </div>
@@ -677,43 +677,34 @@
     <!--==== FOOTER ====-->
     <footer class="footer-distributed">
         <div class="footer-right">
-            <a href="https://www.facebook.com/pawankolhe1996" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.facebook.com/PawanKolhe" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://twitter.com/Pawan_Kolhe" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://plus.google.com/u/1/+PawanKolhe" target="_blank"><i class="fab fa-google-plus"></i></a>
             <a href="https://dribbble.com/pawankolhe" target="_blank"><i class="fab fa-dribbble"></i></a>
             <a href="https://www.instagram.com/pawan_kolhe/" target="_blank"><i class="fab fa-instagram"></i></a>
             <!--<a href="snapchat://add/pawan0" class="tooltip"><i class="fab fa-snapchat-ghost"></i><p class="tooltiptext">pawan0</p></a>-->
-            <a href="https://www.youtube.com/user/mrpawankolhe" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.youtube.com/PawanKolhe" target="_blank"><i class="fab fa-youtube"></i></a>
             <a href="http://steamcommunity.com/id/PawanKolhe/" target="_blank"><i class="fab fa-steam"></i></a>
             <a href="https://www.linkedin.com/in/kolhepawan/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/PawanKolhe" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.freecodecamp.org/pawankolhe" target="_blank"><i class="fab fa-free-code-camp"></i></a>
             <a href="https://codepen.io/pawankolhe/" target="_blank"><i class="fab fa-codepen"></i></a>
-            <a href="mailto:contact@pawankolhe.com"><i class="far fa-envelope-open"></i></a>
         </div>
         <div class="footer-left">
-            <p>Made in India <img src="img/icons/india-flag.png" alt="India" style="height: 18px;vertical-align: text-bottom"></p>
+            <p>Handcrafted by Pawan Kolhe</p>
         </div>
     </footer>
     </div>
 
     <!-- Back to Top button -->
-    <a href="#header" class="anchor-links">
+    <a onclick="scrollToElement('header')" class="anchor-links">
         <nav id="go_to_top_button">
             <i class="fas fa-arrow-up fa-lg"></i>
         </nav>
     </a>
 
     <!--==== SCRIPTS ====-->
-    <script async src="js/canvas.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/common.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lf5Lr8UAAAAAK2SKzSmGbvPUAEi-EGDk240bE1X"></script>
-    <script>
-    grecaptcha.ready(function() {
-        grecaptcha.execute('6Lf5Lr8UAAAAAK2SKzSmGbvPUAEi-EGDk240bE1X', {action: 'homepage'}).then(function(token) {
-        });
-    });
-    </script>
+    <script src="js/canvas.js"></script>
 </body>
 </html>
