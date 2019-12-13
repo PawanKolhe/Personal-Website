@@ -739,26 +739,6 @@ h3 {
     margin-right: auto;
 }
 
-.article_container4 {
-    width: 45%;
-    float: right;
-    display: inline-block;
-}
-
-.article_container4 section {
-    margin-left: 30px;
-    font-size: 1.1rem;
-    color: #3B3B3B;
-}
-
-.article_container4 .subtitle {
-    padding-bottom: 10px;
-    margin-top: 40px;
-    margin-left: 15px;
-    font-size: 1.4rem;
-    color: #3B3B3B;
-}
-
 #container4 .inner_container .article .subtitle hr {
 	height: 3px;
     text-align: left;
@@ -767,11 +747,6 @@ h3 {
 
 .subtitle i {
     font-size: 1rem;
-}
-
-#container4 .article_container4 .color_3b {
-    color: #3B3B3B;
-	font-family: Montserrat, "Open Sans", san-serif;
 }
 
 /* GRID Start */
