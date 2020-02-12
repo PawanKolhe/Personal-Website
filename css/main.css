@@ -226,6 +226,7 @@ h3 {
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    user-select: none;
 }
 
 #container1 .article p {
@@ -247,6 +248,7 @@ h3 {
     box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     transition: 0.2s ease;
+    user-select: none;
 }
 
 #pawankolhe_img:hover {
@@ -292,6 +294,7 @@ h3 {
 
 .floating-icons {
     z-index: -1;
+    user-select: none;
 }
 
 #floatLayer1 {
