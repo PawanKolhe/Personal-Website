@@ -1,1 +1,3 @@
 OTHERS/
+.*
+!/.gitignore
