@@ -1031,6 +1031,9 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     .inner_container {
         max-width: 1080px;
     }
+    #container2 .inner_container {
+        max-width: 1280px;
+    }
 }
 
 @media(max-width:1450px) {
