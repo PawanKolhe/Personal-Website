@@ -244,9 +244,9 @@ h3 {
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 20px;
-	-webkit-box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 10px 38px 0 rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: 0 10px 38px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 38px 0 rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     transition: 0.2s ease;
     user-select: none;
@@ -254,9 +254,9 @@ h3 {
 
 #pawankolhe_img:hover {
     transform: translateY(-4px);
-    -webkit-box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 0 15px 38px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 38px 0 rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: 0 0 38px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 15px 38px 2px rgba(255, 255, 255, 0.3);
 }
 
 #container1 .article p strong {
@@ -349,7 +349,7 @@ h3 {
 }
 
 #container5 .boxes {
-    width: 250px;
+    width: 200px;
     height: auto;
     margin: 15px auto;
     display: inline-block;
@@ -1027,6 +1027,12 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 }
 
 /********************* MEDIA QUERIES ************************/
+@media(max-width:1920px) {
+    .inner_container {
+        max-width: 1080px;
+    }
+}
+
 @media(max-width:1450px) {
     .inner_container {
         max-width: 945px;
